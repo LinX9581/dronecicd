@@ -1,4 +1,4 @@
-Drone CICD
+# Drone CICD
 簡易架設方式
 先到 Github 建立 Oauth App Homepage URL & Authorization callback URL 分別填入 https://your.droneapp.com https://your.droneapp.com/login 建立完成後會取得 Key1 : ID , Key2 : Secret , Key3 : 隨便建一組Key (drone環境變數會用到)
 
@@ -11,9 +11,15 @@ DRONE_SERVER_HOST='your.droneapp.com'
 DRONE_SERVER_PROTO=https
 DRONE_RPC_SERVER='rpc.your.droneapp.com'
 DRONE_RPC_PROTO=https
-docker-compose up -d
-
-建立完drone後連到your.droneapp.com 讓 Github授權
+## 環境變數填完後
+sh drone.sh
+## 執行完腳本還要做的事
+開 TCP 4500 port
+綁DNS
+SSL
+綁Github
+放rsa key
+這定專案的screct name screct value
 
 授權需要CICD的專案 並 建立screte screte的name&value 分別填上 Key3 , your.droneapp.com(這台主機的 private key)
 
