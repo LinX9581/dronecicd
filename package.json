@@ -1,0 +1,21 @@
+{
+    "name": "drone",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "node ./node_modules/mocha/bin/mocha --exit"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "chai": "^4.2.0",
+        "expect": "^26.4.0",
+        "express": "^4.17.1",
+        "supertest": "^4.0.2"
+    },
+    "devDependencies": {
+        "mocha": "^7.1.1"
+    }
+}
