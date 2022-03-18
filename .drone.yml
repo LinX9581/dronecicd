@@ -12,7 +12,7 @@ pipeline:
       # - 10.140.0.14
     username: lin-drone
     key:
-      from_secret: Inward-Jump-Mechanism-Destructive-7
+      from_secret: Lonely-Kill-History-Bury-7
     target: /root/.ssh/id_rsa
     script:
       - sudo ls -l /var/www  # or whereever you put your `deploy.sh`       
